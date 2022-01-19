@@ -1,2 +1,24 @@
-### Basic user test
-GET http://localhost:5000/api/user/test
+### UPDATE
+PUT http://localhost:5000/api/user/update/61e6eab9784ef358d83fa44a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTZmMDIzY2NiMmM5NzdlZWVhNWM0YSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0MjU5NTI2NywiZXhwIjoxNjQyODU0NDY3fQ.yCff9mryBxWjIUBe9GyhwspONGLlJnuph359LJjK0AY
+Content-Type: application/json
+
+{
+	"isAdmin": true
+}
+
+### GET
+GET http://localhost:5000/api/user/find/61e6eab9784ef358d83fa44a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTZmMDIzY2NiMmM5NzdlZWVhNWM0YSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0MjU5NTI2NywiZXhwIjoxNjQyODU0NDY3fQ.yCff9mryBxWjIUBe9GyhwspONGLlJnuph359LJjK0AY
+
+### GET ALL USERS
+GET http://localhost:5000/api/user/all-users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTZmMDIzY2NiMmM5NzdlZWVhNWM0YSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0MjU5NTI2NywiZXhwIjoxNjQyODU0NDY3fQ.yCff9mryBxWjIUBe9GyhwspONGLlJnuph359LJjK0AY
+
+### GET NEW USERS (LIMITED TO ONE)
+GET http://localhost:5000/api/user/all-users?new=true
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTZmMDIzY2NiMmM5NzdlZWVhNWM0YSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0MjU5NTI2NywiZXhwIjoxNjQyODU0NDY3fQ.yCff9mryBxWjIUBe9GyhwspONGLlJnuph359LJjK0AY
+
+### GET USER STATS
+GET http://localhost:5000/api/user/stats
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTZmMDIzY2NiMmM5NzdlZWVhNWM0YSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0MjU5NTI2NywiZXhwIjoxNjQyODU0NDY3fQ.yCff9mryBxWjIUBe9GyhwspONGLlJnuph359LJjK0AY

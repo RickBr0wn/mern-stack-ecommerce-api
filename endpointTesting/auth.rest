@@ -8,7 +8,18 @@ Content-Type: application/json
 		"username": "bob_sled",
 		"email": "bobbies@email.com",
 		"password": "bobselitepassword"
-	}
+}
+
+### REGISTER ADMIN
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+		"username": "admin",
+		"email": "admin@email.com",
+		"password": "adminadmin",
+		"isAdmin": true
+}
 
 ### LOGIN
 POST http://localhost:5000/api/auth/login
@@ -17,4 +28,13 @@ Content-Type: application/json
 {
 	"username": "bob_sled",
 	"password": "bobselitepassword"
+}
+
+### LOGIN ADMIN
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+	"username": "admin",
+	"password": "adminadmin"
 }
