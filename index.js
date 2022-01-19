@@ -7,6 +7,8 @@ const testRoute = require('./routes/test')
 const userRoute = require('./routes/user')
 const authRoutes = require('./routes/auth')
 const productRoutes = require('./routes/product')
+const cartRoutes = require('./routes/cart')
+const orderRoutes = require('./routes/order')
 
 const app = express()
 
@@ -31,6 +33,8 @@ app.use('/api/server/', testRoute)
 app.use('/api/user/', userRoute)
 app.use('/api/auth/', authRoutes)
 app.use('/api/products/', productRoutes)
+app.use('/api/cart/', cartRoutes)
+app.use('/api/orders/', orderRoutes)
 
 const server = app.listen(process.env.SERVER_PORT, () => {
 	console.log(`✅ backend server is running on port ${process.env.SERVER_PORT}`)
