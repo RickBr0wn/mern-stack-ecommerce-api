@@ -1,0 +1,20 @@
+### UPDATE
+POST http://localhost:5000/api/products/add-product
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTZmMDIzY2NiMmM5NzdlZWVhNWM0YSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0MjU5NTI2NywiZXhwIjoxNjQyODU0NDY3fQ.yCff9mryBxWjIUBe9GyhwspONGLlJnuph359LJjK0AY
+Content-Type: application/json
+
+{
+	"title": "A title of the third product",
+	"desc": "A description of the third product",
+	"img": "A URL of the image",
+	"categories": ["category", "category", "category", "category"],
+	"size": ["size","size","size","size"],
+	"color": ["color"],
+	"price": "9.99"
+}
+
+### GET ALL PRODUCTS
+GET http://localhost:5000/api/products/all-products
+
+### GET SINGLE PRODUCT BY ID
+GET http://localhost:5000/api/products/find/61e817479107d4e8ccfab2a2
